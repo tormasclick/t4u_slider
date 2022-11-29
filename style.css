@@ -1,0 +1,162 @@
+.title {
+  font-size: 3rem;
+  color:#f29103 !important;
+  margin:0 !important;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color:#f29203 !important;
+  margin:15px 0 25px !important;
+  font-weight:normal;
+}
+
+.sliderCta {
+  padding: 19px 50px;
+  color: white;
+  background-color: #F29103;
+  text-decoration: none;
+  border-radius: 26px;
+}
+
+#myContainer{
+  height:100vh;
+}
+
+#slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height:550px !important;
+}
+
+.singleSlide {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0px;
+  opacity: 0;
+}
+
+.slideOverlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0 100px;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+}
+
+.sliderNav {
+    position: absolute !important;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  text-indent: -9999px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  transition: all 250ms ease-in-out;
+  text-decoration: none;
+  color: transparent;
+}
+
+.sliderNav:hover {
+  cursor: pointer;
+}
+
+#sliderPrev {
+  transform: rotate(-45deg);
+  left:25px;
+}
+
+#sliderNext {
+  right:25px;
+  transform: rotate(135deg);
+}
+
+#sliderNext img,
+#sliderPrev img {
+  width: 32px;
+}
+
+#dots{
+    position: absolute;
+    bottom: 100px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+    .dot{
+        margin:12px;
+        background-color: white;
+        height:12px;
+        width:12px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    
+
+@-webkit-keyframes slideIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.slideIn {
+  -webkit-animation: slideIn 0.3s forwards linear;
+  animation: slideIn 0.3s forwards linear;
+}
+
+.slideOut {
+  -webkit-animation: slideOut 0.3s forwards linear;
+  animation: slideOut 0.3s forwards linear;
+}
+
+@-webkit-keyframes slideOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@keyframes slideOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+
+
+/* PERSONAL CSS */
+body, html{
+  height:100%;
+  width:100%;
+  margin:0;
+  font-family: "Roboto", sans-serif;
+}
+
+#mySlider{
+  height:100%;
+  positon:absolute;
+  right:0;
+  left:0;
+  bottom:0;
+  top:0;
+  
+}
